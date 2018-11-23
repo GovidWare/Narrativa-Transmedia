@@ -1,0 +1,52 @@
+
+/*==================>Scroll<==================*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #FFFFFF;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F1F1F1;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9EE129;
+}
+/*==========================================*/
+
+.hormiga{
+  position: absolute; 
+  top: 0%;
+  left: 22%;
+  width: 50%; 
+  z-index: 4;
+  /*border: 3px solid #EB08E8;*/
+}
+
+.texto1{
+  position: absolute; 
+  top: 72.2%;
+  left: 44.5%;
+  width: 11%; 
+  /*border: 3px solid #15F1E9;*/
+}
+
+.texto2{
+  position: absolute; 
+  top: 88%;
+  left: 40%;
+  width: 20%; 
+  /*border: 3px solid #15F1E9;*/
+}
+ 
+.boton{
+	position: absolute; 
+  top: 44%;
+  left: 44%;
+  width: 12%; 
+  z-index: 5;
+  /*border: 3px solid #15F1E9;*/
+}

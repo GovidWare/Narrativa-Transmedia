@@ -1,0 +1,26 @@
+
+.lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out;
+}
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(190%, 0, 0) skewX(-30deg);
+    transform: translate3d(190%, 0, 0) skewX(-30deg);
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html><!--indica que se esta trabajando en html5-->
+<html lang="es">
+    <head>
+    	<meta charset="UTF-8"><!--indica de forma expresa la codificación de ¡¡¡caracteres utilizada!!! (por ejemplo tildes)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--sirve para optimizar el sitio para móviles-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="application-name"content="Narrativa transmedia en las matemáticas"/> 
+        <meta name="author" content="Diego David Ramos Sánchez, ddramoss@unal.edu.co" />
+       
+        <link rel="stylesheet"   href="../css/estilo/estilo5.css">
+        <link rel="stylesheet"   href="../css/estilo/general.css">
+        <link rel="stylesheet"   href="../css/animacion/animacion5.css">
+        <link rel="stylesheet"   href="../css/animacion/general.css">
+        <link rel="icon"  href="../images/favicon/hor.ico">
+
+		<title>Narrativa transmedia en las matemáticas</title>
+	</head>
+
+	<body>
+		<div class="contenedor">
+
+                
+            <div class="fondo">
+                <img src="../images/screen5/fondo.png">
+            </div>  
+                
+ 
+
+            <div  class="home agrandarC casa" >
+                <a href="pag2.html">
+                    <img src="../images/botones/home.png" alt="" >
+                </a>
+            </div >
+
+            <div  class="reg  agrandarB" " >
+                <a href="pag3.html">
+                    <img src="../images/botones/reg.png" alt="" >
+                </a>
+            </div >
+
+           
+
+            <div  class="b1 agrandarB" >
+                <a href="pag6.html">
+                    <img src="../images/screen5/txt1.png" alt="" onmouseover="imagen1('visible')" onmouseout="imagen1('hidden')" >
+                </a>
+            </div >
+
+            <div  class="b2 agrandarB" >
+                <a href="pag7.html">
+                    <img src="../images/screen5/txt2.png" alt="" onmouseover="imagen2('visible')" onmouseout="imagen2('hidden')">
+                </a>
+            </div >
+
+            <div  class="b3 agrandarB" >
+                <a href="pag8.html">
+                    <img src="../images/screen5/txt3.png" alt="" onmouseover="imagen3('visible')" onmouseout="imagen3('hidden')">
+                </a>
+            </div >
+
+            <div  class="b4 agrandarB" >
+                <a href="pag9.html">
+                    <img src="../images/screen5/txt4.png" alt="" onmouseover="imagen4('visible')" onmouseout="imagen4('hidden')">
+                </a>
+            </div >
+
+
+
+            <div  class="c1" >
+                <img src="../images/screen5/c1.png" alt="" id="t1" style="visibility:hidden" >
+                
+            </div >
+
+            <div  class="c2" >
+                <img src="../images/screen5/c2.png" alt="" id="t2" style="visibility:hidden" >
+                
+            </div >
+
+            <div  class="c3" >
+                <img src="../images/screen5/c3.png" alt="" id="t3" style="visibility:hidden" >
+                
+            </div >
+            
+            <div  class="c4" >
+                <img src="../images/screen5/c4.png" alt="" id="t4" style="visibility:hidden" >
+                
+            </div >
+
+ 
+
+        </div>
+        <script type="text/javascript"> 
+            function imagen1(ver) { 
+              document.getElementById('t2').style.visibility = ver; 
+              document.getElementById('t3').style.visibility = ver; 
+              document.getElementById('t4').style.visibility = ver; 
+
+            } 
+
+            function imagen2(ver) { 
+              document.getElementById('t1').style.visibility = ver; 
+              document.getElementById('t3').style.visibility = ver; 
+              document.getElementById('t4').style.visibility = ver; 
+            } 
+
+            function imagen3(ver) { 
+              document.getElementById('t1').style.visibility = ver; 
+              document.getElementById('t2').style.visibility = ver; 
+              document.getElementById('t4').style.visibility = ver; 
+
+            } 
+
+            function imagen4(ver) { 
+              document.getElementById('t1').style.visibility = ver; 
+              document.getElementById('t2').style.visibility = ver; 
+              document.getElementById('t3').style.visibility = ver; 
+            } 
+        </script> 
+	</body>
+
+</html>

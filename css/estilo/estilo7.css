@@ -1,0 +1,27 @@
+
+/*==================>Scroll<==================*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #FFFFFF;
+}
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  background-color: #F1F1F1;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 12px; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #167268;
+}
+/*==========================================*/
+
+.hormi{
+  position: absolute; 
+  top: 26%;
+  left: 56%;
+  width: 21%; 
+  z-index: 5;
+  /*border: 3px solid #15F1E9;*/
+}

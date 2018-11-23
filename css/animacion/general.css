@@ -1,0 +1,110 @@
+
+/*====================== la imagen se vulve opaca y luego oscura (titilea) ====================== */
+.casa:hover {
+  animation-name: cas; /*nombre de la animacion*/
+  animation-duration: 1s;  /*Tiempo que dura la animación*/
+  animation-timing-function: linear;/*tipo de animación*/
+  animation-iteration-count:infinite;/*cuantas veces sucede la animación*/
+  animation-direction: alternate;
+}
+@keyframes cas {  
+  0% { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+/*====================== la imagen se vulve opaca y luego oscura (titilea) ====================== */
+#parpadeo {
+  animation-name: parpadear; /*nombre de la animacion*/
+  animation-duration: 1s;  /*Tiempo que dura la animación*/
+  animation-timing-function: linear;/*tipo de animación*/
+  animation-iteration-count:infinite;/*cuantas veces sucede la animación*/
+  animation-direction: alternate;
+}
+@keyframes parpadear {  
+  0% {opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+
+/*========Agranda la imagen al pasar el cursor========*/
+.agrandarB:hover  {
+  transform:scale(1.1);
+}
+
+.agrandarC:hover  {
+	transform:scale(1.2);
+}
+
+/*====================== la imagen creze y se apequeña ========================================== */
+#camTam {
+  animation-name: escala; /*nombre de la animacion*/
+  animation-duration: 1s;  /*Tiempo que dura la animación*/
+  animation-timing-function: linear;/*tipo de animación*/
+  animation-iteration-count:infinite;/*cuantas veces sucede la animación*/
+  animation-direction: alternate;
+}
+@keyframes escala {  
+  from{transform: scale(1);}
+  to{transform: scale(.9);}
+}
+/*=====================================================================================================*/
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+
+/*=======================Entra una imagen de derecha a izquierda ========================*/
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from {
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/*=========================================================================================*/
+
+/*=======================Entra una imagen de izquierda a derecha ========================*/
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+/*=========================================================================================*/
+
